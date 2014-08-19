@@ -3,7 +3,7 @@
   "version": "1.0.7",
   "description": "Saves you time by getting rid of Facebook news feed.",
   "content_scripts": [{
-      "matches": ["*://*.facebook.com/*"],
+      "matches": ["*://*.facebook.com/*", "*://*.nba.com/*"],
       "js": ["jquery.min.js", "kill.js"],
       "run_at": "document_start"
   }],
@@ -12,5 +12,8 @@
     "48": "images/icon-red.png",
     "128": "images/icon-red.png"
   },
+  "permissions": [
+    "tabs"
+  ],
   "manifest_version": 2
 }

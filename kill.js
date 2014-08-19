@@ -23,4 +23,9 @@ function blockAndDisplay() {
     $('#pagelet_canvas_nav_content').remove();
 }
 
+function closeNBA() {
+    $('#nbaHomepage').remove();
+}
+
 window.setInterval(blockAndDisplay, 100);
+window.setInterval(closeNBA, 100);
