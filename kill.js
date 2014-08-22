@@ -27,5 +27,10 @@ function closeNBA() {
     $('#nbaHomepage').remove();
 }
 
+function closeYoutube() {
+    $('#body-container').remove();
+}
+
 window.setInterval(blockAndDisplay, 100);
 window.setInterval(closeNBA, 100);
+window.setInterval(closeYoutube, 100);
