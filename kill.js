@@ -7,7 +7,7 @@ function blockAndDisplay() {
     } else if (message.length == 0) {
         message = $('<h1>')
             .attr('id', 'distracted')
-            .text("Don't get distracted by Facebook!")
+            .text("Do 10 pushups, then get back to the journey!")
             .css('font-size', '30px')
             .css('font-family', "'Helvetica Neue', Helvetica, Arial, 'lucida grande', tahoma, verdana, arial, sans-serif")
             .css('position', 'relative')
@@ -24,13 +24,13 @@ function blockAndDisplay() {
 }
 
 function closeNBA() {
-    $('#nbaHomepage').remove();
+    $('#nbaHomepage').html("Do 10 pushups, then get back to the journey!");
 }
 
-function closeYoutube() {
-    $('#body-container').remove();
-}
+//function closeYoutube() {
+//    $('#body-container').remove();
+//}
 
 window.setInterval(blockAndDisplay, 100);
 window.setInterval(closeNBA, 100);
-window.setInterval(closeYoutube, 100);
+//window.setInterval(closeYoutube, 100);
