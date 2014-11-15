@@ -24,7 +24,7 @@ function blockAndDisplay() {
 }
 
 function closeNBA() {
-    $('#nbaHomepage').html("Do 10 pushups, then get back to the journey!");
+    $('body').prepend("<div><h2>Add notes on how to improve basketball in WiseMap!</h2></div>");
 }
 
 //function closeYoutube() {
@@ -32,5 +32,5 @@ function closeNBA() {
 //}
 
 window.setInterval(blockAndDisplay, 100);
-window.setInterval(closeNBA, 100);
+window.onload = closeNBA;
 //window.setInterval(closeYoutube, 100);
